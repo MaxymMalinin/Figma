@@ -1,20 +1,38 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #070707;
+  letter-spacing: 0.02em;
+  line-height: 1.362;
+}
+
 .center {
   margin: auto;
   max-width: 970px;
 }
 
-.nav_list {
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+}
+
+.NavList {
   display: flex;
-  list-style-type: none;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+  gap: 40px;
+  border-bottom: 1px solid #828282;
 }
-
-.nav_list_item {
-  margin: 10px 20px;
+.NavList_item_link {
+  color: #828282;
 }
-
-.nav_list_item_link {
-  text-decoration: none;
-  color: black;
+.NavList_item_link:hover {
+  color: #070707;
 }
 
 .images {
@@ -28,4 +46,8 @@
 
 .hollow {
   color: #e5e5e5;
+}
+
+footer {
+  height: 2000px;
 }/*# sourceMappingURL=styles.css.map */

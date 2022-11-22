@@ -1,20 +1,43 @@
+@import "./_variables.scss";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: $color-text;
+  letter-spacing: 0.02em;
+  line-height: 1.362;
+}
+
 .center {
   margin: auto;
   max-width: 970px;
 }
 
-.nav_list {
+.header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+}
+
+.NavList {
   display: flex;
-  list-style-type: none;
-}
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+  gap: 40px;
+  border-bottom: 1px solid $color-light;
 
-.nav_list_item {
-  margin: 10px 20px;
-}
+  &_item {
+    &_link {
+      color: $color-light;
 
-.nav_list_item_link {
-  text-decoration: none;
-  color: black;
+      &:hover {
+        color: $color-text;
+      }
+    }
+  }
 }
 
 .images {
@@ -28,4 +51,8 @@
 
 .hollow {
   color: #e5e5e5;
+}
+
+footer {
+  height: 2000px;
 }
