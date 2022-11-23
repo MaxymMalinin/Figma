@@ -6,12 +6,12 @@ body {
   line-height: 1.362;
 }
 
-.center {
+.Center {
   margin: auto;
   max-width: 970px;
 }
 
-.header {
+.Header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -26,7 +26,6 @@ body {
   height: 80px;
   align-items: center;
   gap: 40px;
-  border-bottom: 1px solid #828282;
 }
 .NavList_item_link {
   color: #828282;
@@ -35,19 +34,73 @@ body {
   color: #070707;
 }
 
-.images {
+.Section:first-child .Center {
+  border-top: 1px solid #828282;
+  padding-top: 12px;
+}
+.Section:nth-of-type(even) {
+  background-color: #f6f6f6;
+}
+.Section:not(:first-child) {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.Heading {
+  font-size: 48px;
+  font-weight: 700;
+}
+.Heading_small {
+  font-size: 34px;
+}
+
+.Image {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.Paragraph {
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.Paragraph_medium {
+  margin-top: 30px;
+}
+.Paragraph_small {
+  margin-top: 20px;
+}
+
+.Images {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+.Images .Image {
+  width: 80px;
+  height: 80px;
+}
+.Images .Figcaption {
+  margin-top: 25px;
+  max-width: 90px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: auto;
+  margin-left: auto;
+  color: #828282;
 }
 
-.fa-solid:hover {
-  color: black;
+.Stars {
+  margin-top: 60px;
 }
 
-.hollow {
+.fa-star {
+  font-size: 26px;
+}
+.fa-star:hover {
+  color: #070707;
+}
+
+.EmptyStar {
   color: #e5e5e5;
-}
-
-footer {
-  height: 2000px;
 }/*# sourceMappingURL=styles.css.map */

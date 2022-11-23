@@ -20,9 +20,9 @@
   </head>
 
   <body>
-    <header class="header center">
+    <header class="Header">
       <nav>
-        <ul class="NavList">
+        <ul class="NavList Center">
           <li class="NavList_item">
             <a class="NavList_item_link" href="#Home">Home</a>
           </li>
@@ -42,104 +42,138 @@
       </nav>
     </header>
 
-    <main class="center">
-      <section id="Home">
-        <h1>Denis Novik</h1>
-        <img src="image/man&hat.jpg" alt="Denis Novik photo with hat" />
-      </section>
-
-      <section id="About me">
-        <h2>About me</h2>
-        <p>
-          Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design
-          and everything connected with it.
-        </p>
-        <p>
-          I'm studying at courses "Web and mobile design interfaces" in
-          IT-Academy.
-        </p>
-        <p>Ready to implement excellent projects with wonderful people.</p>
-      </section>
-
-      <section id="Skills">
-        <h2>Skills</h2>
-        <p>I work in such programs as</p>
-        <div class="images">
-          <figure>
-            <img src="image/Ps.svg" alt="Adobe Photoshop icon" />
-            <figcaption>Adobe Photoshop</figcaption>
-            <div>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star hollow"></i>
-              <i class="fa-solid fa-star hollow"></i>
-              <i class="fa-solid fa-star hollow"></i>
-            </div>
-          </figure>
-
-          <figure>
-            <img src="image/Ai.svg" alt="Adobe Illustrator icon" />
-            <figcaption>Adobe Illustrator</figcaption>
-            <div>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star hollow"></i>
-              <i class="fa-solid fa-star hollow"></i>
-            </div>
-          </figure>
-
-          <figure>
-            <img src="image/Ae.svg" alt="Adobe After Effects icon" />
-            <figcaption>Adobe After Effects</figcaption>
-            <div>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star hollow"></i>
-            </div>
-          </figure>
-
-          <figure>
-            <img src="image/Figma.svg" alt="Figma icon" />
-            <figcaption>Figma</figcaption>
-            <div>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </figure>
+    <main>
+      <section class="Section" id="Home">
+        <div class="Center">
+          <h1 class="Heading">Denis Novik</h1>
+          <img
+            class="Image"
+            src="image/man&hat.jpg"
+            alt="Denis Novik photo with hat"
+          />
         </div>
       </section>
 
-      <section id="Portfolio">
-        <h2>Portfolio</h2>
+      <section class="Section" id="About me">
+        <div class="Center">
+          <h2 class="Heading Heading_small">About me</h2>
+          <p class="Paragraph">
+            Hi, I'm Denis – UX/UI designer from Minsk.<br />I'm interested in
+            design and everything connected with it.
+          </p>
+          <p class="Paragraph Paragraph_medium">
+            I'm studying at courses "Web and mobile design<br />interfaces" in
+            IT-Academy.
+          </p>
+          <p class="Paragraph Paragraph_medium">
+            Ready to implement excellent projects<br />with wonderful people.
+          </p>
+        </div>
+      </section>
 
-        <div>
-          <figure>
-            <img src="image/Fashion-Store.png" alt="Fashion Store page" />
-            <figcaption>Online fashion store - Homepage</figcaption>
-          </figure>
+      <section class="Section" id="Skills">
+        <div class="Center">
+          <h2 class="Heading Heading_small">Skills</h2>
+          <p class="Paragraph Paragraph_small">I work in such programs as</p>
+          <div class="Images">
+            <figure>
+              <img
+                class="Image"
+                src="image/Ps.svg"
+                alt="Adobe Photoshop icon"
+              />
+              <figcaption class="Figcaption">Adobe Photoshop</figcaption>
+              <div class="Stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star EmptyStar"></i>
+                <i class="fa-solid fa-star EmptyStar"></i>
+                <i class="fa-solid fa-star EmptyStar"></i>
+              </div>
+            </figure>
 
-          <figure>
-            <img src="image/reebok_web.png" alt="Reebok page" />
-            <figcaption>Reebok Store - Concept</figcaption>
-          </figure>
+            <figure>
+              <img
+                class="Image"
+                src="image/Ai.svg"
+                alt="Adobe Illustrator icon"
+              />
+              <figcaption class="Figcaption">Adobe Illustrator</figcaption>
+              <div class="Stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star EmptyStar"></i>
+                <i class="fa-solid fa-star EmptyStar"></i>
+              </div>
+            </figure>
 
-          <figure>
-            <img src="image/braun-landing.png" alt="Braun page" />
-            <figcaption>Braun Landing Page - Concept</figcaption>
-          </figure>
+            <figure>
+              <img
+                class="Image"
+                src="image/Ae.svg"
+                alt="Adobe After Effects icon"
+              />
+              <figcaption class="Figcaption">Adobe After Effects</figcaption>
+              <div class="Stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star EmptyStar"></i>
+              </div>
+            </figure>
+
+            <figure>
+              <img class="Image" src="image/Figma.svg" alt="Figma icon" />
+              <figcaption class="Figcaption">Figma <br /><br /></figcaption>
+              <div class="Stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="Section" id="Portfolio">
+        <div class="Center">
+          <h2 class="Heading Heading_small">Portfolio</h2>
+
+          <div>
+            <figure>
+              <img
+                class="Image"
+                src="image/Fashion-Store.png"
+                alt="Fashion Store page"
+              />
+              <figcaption>Online fashion store - Homepage</figcaption>
+            </figure>
+
+            <figure>
+              <img class="Image" src="image/reebok_web.png" alt="Reebok page" />
+              <figcaption>Reebok Store - Concept</figcaption>
+            </figure>
+
+            <figure>
+              <img
+                class="Image"
+                src="image/braun-landing.png"
+                alt="Braun page"
+              />
+              <figcaption>Braun Landing Page - Concept</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="center" id="Contacts">
-      <h2>Contacts</h2>
-      <p>Want to know more or just chat? You are welcome!</p>
+    <footer class="Footer Center" id="Contacts">
+      <h2 class="Heading Heading_small">Contacts</h2>
+      <p class="Paragraph">Want to know more or just chat? You are welcome!</p>
       <button>Send message</button>
       <figure>
         <img src="image/linkedin.svg" alt="Linkedin" />
@@ -147,7 +181,7 @@
         <img src="image/behance.svg" alt="Behance" />
         <img src="image/dribbble.svg" alt="Dribbble" />
       </figure>
-      <p>Like me on LinkedIn, Instagram, Behance, Dribble</p>
+      <p class="Paragraph">Like me on LinkedIn, Instagram, Behance, Dribble</p>
     </footer>
   </body>
 </html>

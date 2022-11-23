@@ -5,15 +5,16 @@ body {
   font-size: 18px;
   color: $color-text;
   letter-spacing: 0.02em;
+  // FIXME: перевірити цей спейсінг і видати його тільки потрібним елементам
   line-height: 1.362;
 }
 
-.center {
+.Center {
   margin: auto;
   max-width: 970px;
 }
 
-.header {
+.Header {
   position: sticky;
   top: 0;
   right: 0;
@@ -27,7 +28,6 @@ body {
   height: 80px;
   align-items: center;
   gap: 40px;
-  border-bottom: 1px solid $color-light;
 
   &_item {
     &_link {
@@ -40,19 +40,84 @@ body {
   }
 }
 
-.images {
+.Section {
+  &:first-child {
+    .Center {
+      border-top: 1px solid $color-light;
+      padding-top: 12px;
+    }
+  }
+
+  &:nth-of-type(even) {
+    background-color: $bg-gray;
+  }
+
+  &:not(:first-child) {
+    padding: 100px 0;
+    text-align: center;
+  }
+}
+
+.Heading {
+  font-size: 48px;
+  font-weight: 700;
+
+  &_small {
+    font-size: 34px;
+  }
+}
+
+.Image {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.Paragraph {
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+
+  &_medium {
+    margin-top: 30px;
+  }
+
+  &_small {
+    margin-top: 20px;
+  }
+}
+
+.Images {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+
+  .Image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .Figcaption {
+    margin-top: 25px;
+    max-width: 90px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: auto;
+    margin-left: auto;
+    color: $color-light;
+  }
 }
 
-.fa-solid:hover {
-  color: black;
+.Stars {
+  margin-top: 60px;
 }
 
-.hollow {
+.fa-star {
+  font-size: 26px;
+  &:hover {
+    color: $color-text;
+  }
+}
+
+.EmptyStar {
   color: #e5e5e5;
-}
-
-footer {
-  height: 2000px;
 }
