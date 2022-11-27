@@ -2,13 +2,8 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   color: #070707;
-  letter-spacing: 0.02em;
   line-height: 1.362;
-}
-
-.Center {
-  margin: auto;
-  max-width: 970px;
+  background-color: #ffffff;
 }
 
 .Header {
@@ -17,7 +12,13 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  background-color: white;
+  background-color: #ffffff;
+  letter-spacing: 0.02em;
+}
+
+.Center {
+  margin: auto;
+  max-width: 970px;
 }
 
 .NavList {
@@ -58,6 +59,9 @@ body {
   margin-top: 50px;
   width: 100%;
 }
+.Image_alt {
+  margin-top: 70px;
+}
 
 .Paragraph {
   margin-top: 50px;
@@ -70,6 +74,9 @@ body {
 .Paragraph_small {
   margin-top: 20px;
 }
+.Paragraph_large {
+  margin-top: 60px;
+}
 
 .Images {
   display: flex;
@@ -80,7 +87,8 @@ body {
   width: 80px;
   height: 80px;
 }
-.Images .Figcaption {
+
+.Figcaption {
   margin-top: 25px;
   max-width: 90px;
   font-size: 14px;
@@ -88,6 +96,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   color: #828282;
+  letter-spacing: 0.02em;
 }
 
 .Stars {
@@ -103,4 +112,45 @@ body {
 
 .EmptyStar {
   color: #e5e5e5;
+}
+
+.ImageDescription {
+  margin-top: 40px;
+  max-width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.ImageDescription_alt {
+  max-width: 260px;
+}
+
+.Footer {
+  padding: 100px 0;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Button {
+  padding: 10px 16px;
+  margin-top: 60px;
+  color: #ffffff;
+  background-color: #070707;
+  border-radius: 22px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.SocialNetwork {
+  margin-top: 30px;
+}
+.SocialNetwork * + * {
+  margin-left: 50px;
+}
+
+.Links {
+  color: #828282;
+  font-size: 14px;
 }/*# sourceMappingURL=styles.css.map */

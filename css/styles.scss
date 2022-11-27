@@ -5,6 +5,7 @@ body {
   font-size: 18px;
   color: $color-text;
   line-height: 1.362;
+  background-color: $color-bg;
 }
 
 .Header {
@@ -12,7 +13,7 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  background-color: white;
+  background-color: $color-bg;
   letter-spacing: 0.02em;
 }
 
@@ -48,7 +49,7 @@ body {
   }
 
   &:nth-of-type(even) {
-    background-color: $bg-gray;
+    background-color: $color-bg-gray;
   }
 
   &:not(:first-child) {
@@ -69,6 +70,10 @@ body {
 .Image {
   margin-top: 50px;
   width: 100%;
+
+  &_alt {
+    margin-top: 70px;
+  }
 }
 
 .Paragraph {
@@ -83,6 +88,10 @@ body {
   &_small {
     margin-top: 20px;
   }
+
+  &_large {
+    margin-top: 60px;
+  }
 }
 
 .Images {
@@ -94,17 +103,17 @@ body {
     width: 80px;
     height: 80px;
   }
+}
 
-  .Figcaption {
-    margin-top: 25px;
-    max-width: 90px;
-    font-size: 14px;
-    font-weight: 700;
-    margin-right: auto;
-    margin-left: auto;
-    color: $color-light;
-    letter-spacing: 0.02em;
-  }
+.Figcaption {
+  margin-top: 25px;
+  max-width: 90px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: auto;
+  margin-left: auto;
+  color: $color-light;
+  letter-spacing: 0.02em;
 }
 
 .Stars {
@@ -119,5 +128,47 @@ body {
 }
 
 .EmptyStar {
-  color: #e5e5e5;
+  color: $color-lighter;
+}
+
+.ImageDescription {
+  margin-top: 40px;
+  max-width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  text-decoration-line: underline;
+
+  &_alt {
+    max-width: 260px;
+  }
+}
+
+.Footer {
+  padding: 100px 0;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Button {
+  padding: 10px 16px;
+  margin-top: 60px;
+  color: $color-bg;
+  background-color: $color-text;
+  border-radius: 22px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.SocialNetwork {
+  margin-top: 30px;
+
+  * + * {
+    margin-left: 50px;
+  }
+}
+
+.Links {
+  color: $color-light;
+  font-size: 14px;
 }
